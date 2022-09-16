@@ -1,7 +1,19 @@
-import "./App.css";
+//import './App.css';
+//import Footer from "./Components/Footer/Footer";
+import { useState } from "react";
+import Formulario from "./Components/Formulario";
+
+import Showapi from "./Components/Showapi";
 
 function App() {
-  return <h1>Personajes de Rick y Morty </h1>;
+  const [SearchName, setSearchName] = useState("");
+
+  return (
+    <div className="container">
+      <Formulario setSearchName={setSearchName} />
+      <Showapi SearchName={SearchName} />
+    </div>
+  );
 }
 
 export default App;

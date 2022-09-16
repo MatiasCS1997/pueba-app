@@ -1,0 +1,10 @@
+body {
+  background-image: url(https://images7.alphacoders.com/633/633262.png);
+}
+
+.seeker {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
